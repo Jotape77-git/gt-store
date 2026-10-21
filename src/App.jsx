@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Footer from "./components/shared/Footer"
 import Home from "./pages/home"
+import Header from "./components/shared/Header"
 
 function App() {
   return (
     <BrowserRouter>
+    <Header/>
       <main> 
         <Routes>
           <Route path="/" element={<Home/>}/>
